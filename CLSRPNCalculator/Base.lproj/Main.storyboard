@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vca-s8-7xx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="xrn-gX-8Dy">
+            <objects>
+                <viewController id="Vca-s8-7xx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CzA-cT-Ffa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="HdZ-35-nyF">
+                                <rect key="frame" x="10" y="30" width="355" height="607"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="AYh-aB-dfa">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="112"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Vca-s8-7xx" id="Jta-Qp-rin"/>
+                                        </connections>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="4w0-0M-3Eo">
+                                        <rect key="frame" x="0.0" y="124" width="355" height="111.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acW-Gc-zm7">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="111.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
+                                                <state key="normal" title="7"/>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="Vca-s8-7xx" eventType="touchUpInside" id="D3z-Mt-UYW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxi-5q-1jk">
+                                                <rect key="frame" x="95" y="0.0" width="70" height="111.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
+                                                <state key="normal" title="8"/>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="Vca-s8-7xx" eventType="touchUpInside" id="knl-AI-2KZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcB-i3-zsQ">
+                                                <rect key="frame" x="190" y="0.0" width="70" height="111.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
+                                                <state key="normal" title="9"/>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="Vca-s8-7xx" eventType="touchUpInside" id="eIm-DA-Xya"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDj-gS-5HD">
+                                                <rect key="frame" x="285" y="0.0" width="70" height="111.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
+                                                <state key="normal" title="%"/>
+                                                <connections>
+                                                    <action selector="divideButtonTapped:" destination="Vca-s8-7xx" eventType="touchUpInside" id="bw7-9G-IZD"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="M0U-NF-RMD">
+                                        <rect key="frame" x="0.0" y="247.5" width="355" height="112"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fl9-bT-uJl">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="112"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
+                                                <state key="normal" title="4"/>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="Vca-s8-7xx" eventType="touchUpInside" id="huw-TX-A2j"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HH9-Px-HQG">
+                                                <rect key="frame" x="95" y="0.0" width="70" height="112"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
+                                                <state key="normal" title="5"/>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="Vca-s8-7xx" eventType="touchUpInside" id="jA9-Yf-FEV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQI-dK-ITI">
+                                                <rect key="frame" x="190" y="0.0" width="70" height="112"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
+                                                <state key="normal" title="6"/>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="Vca-s8-7xx" eventType="touchUpInside" id="lyK-Wa-0CB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHn-OJ-xfg">
+                                                <rect key="frame" x="285" y="0.0" width="70" height="112"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
+                                                <state key="normal" title="x"/>
+                                                <connections>
+                                                    <action selector="multiplyButtonTapped:" destination="Vca-s8-7xx" eventType="touchUpInside" id="zIq-pq-6pn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="ngw-F3-YeO"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Mw6-Jd-VVN">
+                                        <rect key="frame" x="0.0" y="371.5" width="355" height="111.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diY-iy-1S9">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="111.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
+                                                <state key="normal" title="1"/>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="Vca-s8-7xx" eventType="touchUpInside" id="lHk-Z8-fYc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufS-NZ-Ycd">
+                                                <rect key="frame" x="95" y="0.0" width="70" height="111.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
+                                                <state key="normal" title="2"/>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="Vca-s8-7xx" eventType="touchUpInside" id="hnr-6c-0fI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezQ-Q8-R9Q">
+                                                <rect key="frame" x="190" y="0.0" width="70" height="111.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
+                                                <state key="normal" title="3"/>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="Vca-s8-7xx" eventType="touchUpInside" id="mML-bG-gOn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAL-HS-2ai">
+                                                <rect key="frame" x="285" y="0.0" width="70" height="111.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
+                                                <state key="normal" title="-"/>
+                                                <connections>
+                                                    <action selector="subtractButtonTapped:" destination="Vca-s8-7xx" eventType="touchUpInside" id="rh7-lC-jKR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="CQZ-Le-aly"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="mrC-8w-ENw">
+                                        <rect key="frame" x="0.0" y="495" width="355" height="112"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiC-PH-OCh">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="112"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
+                                                <state key="normal" title="."/>
+                                                <connections>
+                                                    <action selector="decimalButtonTapped:" destination="Vca-s8-7xx" eventType="touchUpInside" id="86h-cZ-LFA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfI-I8-xmb">
+                                                <rect key="frame" x="95" y="0.0" width="70" height="112"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
+                                                <state key="normal" title="0"/>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="Vca-s8-7xx" eventType="touchUpInside" id="SmN-XY-iBD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RV-2B-KVR">
+                                                <rect key="frame" x="190" y="0.0" width="70" height="112"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
+                                                <state key="normal" title="⮐"/>
+                                                <connections>
+                                                    <action selector="returnButtonTapped:" destination="Vca-s8-7xx" eventType="touchUpInside" id="gK2-Px-wmg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrC-kI-UaW">
+                                                <rect key="frame" x="285" y="0.0" width="70" height="112"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
+                                                <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="plusButtonTapped:" destination="Vca-s8-7xx" eventType="touchUpInside" id="bDa-37-Fby"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="3Yx-Qp-yj0"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="J9W-fq-WpS" firstAttribute="trailing" secondItem="HdZ-35-nyF" secondAttribute="trailing" constant="10" id="2MJ-Sx-IBg"/>
+                            <constraint firstItem="HdZ-35-nyF" firstAttribute="leading" secondItem="J9W-fq-WpS" secondAttribute="leading" constant="10" id="N3I-Zm-775"/>
+                            <constraint firstItem="HdZ-35-nyF" firstAttribute="centerX" secondItem="CzA-cT-Ffa" secondAttribute="centerX" id="WlP-4L-dIo"/>
+                            <constraint firstItem="HdZ-35-nyF" firstAttribute="top" secondItem="J9W-fq-WpS" secondAttribute="top" constant="10" id="mLX-4r-O8a"/>
+                            <constraint firstItem="HdZ-35-nyF" firstAttribute="top" secondItem="J9W-fq-WpS" secondAttribute="top" constant="10" id="phw-Cx-V89"/>
+                            <constraint firstItem="J9W-fq-WpS" firstAttribute="bottom" secondItem="HdZ-35-nyF" secondAttribute="bottom" constant="30" id="tq0-r6-9Nl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="J9W-fq-WpS"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="AYh-aB-dfa" id="7zd-g1-0hY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4H0-wP-Rs9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9371" y="233"/>
+        </scene>
+    </scenes>
+</document>
